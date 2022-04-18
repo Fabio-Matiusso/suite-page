@@ -10,7 +10,7 @@ const Container = styled.div`
     max-width: 1110px;
     margin: 0 auto;
     max-height: 600px;
-    margin-top: 80px;
+    margin-top: 150px;
 
     @media (max-width: 1024px){
         max-width: 690px;
@@ -18,8 +18,16 @@ const Container = styled.div`
         margin-top: 200px;
     }
 
-    @media (max-width: 590px) {
-        margin-top: 500px;
+    @media (max-width: 600px) {
+        margin-top: 450px;
+    }
+
+    @media (max-width: 520px) {
+        margin-top: 400px;
+    }
+
+    @media (max-width: 420px) {
+        margin-top: 370px;
     }
 `
 
@@ -62,6 +70,16 @@ const ImageJeremyStyledSmall = styled.img`
         display: block;
     }
 
+    @media (max-width: 680px) {
+        top: 2%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+
 `
 
 const Line = styled.img`
@@ -74,6 +92,16 @@ const Line = styled.img`
     @media (max-width: 1024px){
         left: 45%;
         top: 35%;
+    }
+
+    @media (max-width: 680px) {
+        top: 37%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
     }
 `
 
@@ -101,6 +129,10 @@ const TitleStyled = styled.h1`
     span{
         font-weight: 400;
     }
+
+    @media (max-width: 420px){
+        font-size: 38px;
+    }
 `
 
 const StyledDesc = styled.p`
@@ -115,6 +147,10 @@ const StyledDesc = styled.p`
     @media (max-width: 1024px){
         margin: 0 auto;
     }
+
+    @media (max-width: 420px){
+        font-size: 18px;
+    }
 `
 
 const DatasJeremy = styled.div`
@@ -123,6 +159,10 @@ const DatasJeremy = styled.div`
     text-transform: uppercase;
     color: #FAF8F6;
     font-weight: 300;
+
+    @media (max-width: 420px){
+        font-size: 12px;
+    }
 `
 
 const SpanBold = styled.span`

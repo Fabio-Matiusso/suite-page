@@ -32,18 +32,19 @@ const TextAndOptions = styled.div`
     flex-direction: column;
     grid-column: 1;
     grid-row: 1;
-    /* gap: 30px; */
+    margin-top: -30px;
 
-    @media (max-width: 900px){
+    @media (max-width: 920px){
         width: 80%;
         grid-column: 1 / 3;
+        margin: 0px;
     }
 
     @media (max-width: 590px){
         height: 400px;
         grid-row: 1;
         grid-column: 1 / -1;
-        margin: 0 auto;
+        margin: -30px auto;
     }
 
     @media (max-width: 540px){
@@ -69,7 +70,7 @@ const SuperTitle = styled.h1`
 
     @media (max-width: 630px){
         width: 80%;
-        font-size: 50px;
+        font-size: 44px;
     }
 
     @media (max-width: 590px){
@@ -103,7 +104,7 @@ const SuperTitle = styled.h1`
     }
 
     @media (max-width: 630px){
-        font-size: 50px;
+        font-size: 44px;
     }
 
     @media (max-width: 590px){
@@ -135,10 +136,14 @@ const StyledDescription = styled.p`
     color: #49566D;
     margin-top: 50px;
 
-    @media (max-width: 900px){
+    @media (max-width: 920px){
         margin-top: 150px;
-        width: 100%;
+        width: 50%;
         grid-column: 1 / 4;
+    }
+
+    @media (max-width: 900px){
+        width: 100%;
     }
 
     @media (max-width: 630px){
@@ -180,6 +185,8 @@ const StyledButton = styled.div`
     justify-content: center;
     align-items: center;
     opacity: 0.9;
+    margin-bottom: -20px;
+    margin-top: 10px;
 
     &:hover {
         opacity: 1;
@@ -192,18 +199,21 @@ const StyledButton = styled.div`
         font-size: 14px;
         width: 100%;
         height: 50px;
+        margin: 0px;
     }
 
     @media (max-width: 590px){
         grid-row: 3;
         grid-column: 1 / -1;
         width: 200px;
+        margin: 0px;
     }
 
     @media (max-width: 540px){
         width: 150px;
         height: 35px;
         font-size: 12px;
+        margin: 0px;
     }
 
 `
@@ -344,19 +354,25 @@ const SpanSolutionIcon = styled.span`
 
     @media (max-width: 630px) {
         content: "";
+        height: 15px;
         background-image: url(${CurvedLine});
         position: absolute;
-        left: 165px;
+        left: 130px;
         top: -30px
     }
 
-    @media (max-width: 630px) {
+    @media (max-width: 600px) {
         content: "";
         background-image: url(${CurvedLine});
         width: 320px;
         height: 15px;
-        left: 110px;
+        left: 130px;
         top: -30px
+    }
+
+    @media (max-width: 590px){
+        left: 110px;
+        top: -20px;
     }
 
     @media (max-width: 540px){
