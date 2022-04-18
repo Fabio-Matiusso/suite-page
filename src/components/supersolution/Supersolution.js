@@ -3,7 +3,6 @@ import styled from 'styled-components'
 import CelImage from '../../images-suite/image-hero-portrait.png'
 import Fade from 'react-reveal/Fade';
 import CurvedLine from '../../images-suite/pattern-curved-line-1.svg'
-import CurvedLineTwo from '../../images-suite/pattern-curved-line-2.svg'
 import CelImageMobile from '../../images-suite/image-hero-landscape.webp'
 
 const ContainerSuperSolution = styled.div`
