@@ -10,6 +10,20 @@ const HeaderStyled = styled.header`
     justify-content: space-between;
     align-items: center;
     margin-top: 30px;
+
+    @media (max-width: 900px){
+        width: 90%;
+        height: 70px;
+    }
+
+    @media (max-width: 590px){
+        width: 65%;
+        height: 70px;
+    }
+
+    @media (max-width: 380px){
+        width: 60%;
+    }
 `
 
 const LogoHeader = styled.img`
@@ -25,6 +39,30 @@ const ButtonHeader = styled.div`
     justify-content: center;
     align-items: center;
     border-radius: 6px;
+    font-weight: 700;
+
+    &:hover{
+        background-color: #172339;
+        color: white;
+        transition: all 0.2s linear;
+    }
+
+    @media (max-width: 590px){
+        width: 180px;
+        height: 48px;
+    }
+
+    @media (max-width: 540px){
+        width: 150px;
+        height: 44px;
+        font-size: 12px;
+    }
+
+    @media (max-width: 380px){
+        width: 100px;
+        height: 30px;
+        font-size: 9px;
+    }
 `
 
 const Header = () => {
