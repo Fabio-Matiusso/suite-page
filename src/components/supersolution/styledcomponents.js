@@ -4,7 +4,7 @@ import CurvedLine from '../../images-suite/pattern-curved-line-1.svg'
 export const ContainerSuperSolution = styled.div`
     max-width: 1110px;
     margin: 0 auto;
-    max-height: 600px;
+    height: 650px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     
